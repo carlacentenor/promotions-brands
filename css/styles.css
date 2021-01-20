@@ -1,0 +1,72 @@
+@font-face {
+    font-family: "omnes-medium";
+    src: url("../assets/fonts/Omnes-Medium.otf");
+}
+
+@font-face {
+    font-family: "omnes-semibold";
+    src: url("../assets/fonts/omnes-semibold-webfont.ttf");
+}
+
+@font-face {
+    font-family: "omnes-bold";
+    src: url("../assets/fonts/Omnes-Bold.otf");
+}
+
+/* Variables */
+:root{
+    /* Fonts */
+    --omnes-semibold: "omnes-semibold";
+    --omnes-medium: "omnes-medium";
+    --omnes-bold: "omnes-bold";
+    /* Colors */
+    --orange-ngr: #FF8300;
+    --gray-ngr-1:#978B82;
+    --gray-ngr-2:#4d4d4d;
+    --blue-bb:#26358C;
+}
+
+/* Header Brands */
+
+.flex-brands-header div {
+    width: 30%;
+}
+
+.banner-schedule{
+    background-color: var(--orange-ngr);
+    color: white;
+    
+}
+
+.banner-schedule p{
+    font-family: var(--omnes-semibold);
+    font-size: 16px;
+    margin-bottom: 0;
+}
+
+.banner-schedule img{
+    width:28px ;
+}
+
+.title-promotions{
+    color: var(--gray-ngr-1);
+    font-family: var(--omnes-semibold);
+    font-size: 18px;
+    text-align: center;
+}
+
+.title-schedule{
+    font-family: var(--omnes-medium);
+    font-size: 16px;
+    color: var(--gray-ngr-2);
+
+}
+
+.card-shedule{
+    width: 135px;
+    height: 138px;
+    background-color: #fff;
+    box-shadow: 0px 4px 16px #C4C4C4;
+    border-radius: 8px;
+
+}
