@@ -328,20 +328,39 @@ a {
 
 
 
-.grid-text {
+.grid-text,.grid-text-more-des  {
     display: grid;
     grid-template-rows: 55px 32px 25px;
     align-items: center;
+    padding: .5em;
 }
 
 @media screen and (min-width:768px) {
-    .grid-text {
+    .grid-text,.grid-text-more-des {
 
         grid-template-rows: 55px 50px 35px;
-
+        padding: 10px  1.2em;
     }
 }
 
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .grid-text-more-des{
+        display: grid;
+        grid-template-rows: 55px 60px 25px;
+        align-items: center;
+        padding: .5em;
+    }
+    
+}
+
+@media screen and (min-width:1024px) and (max-width:1200px) {
+    .grid-text-more-des{
+     
+        grid-template-rows: 55px 75px 25px;
+    
+    }
+}
 
 .card-title-promo {
     font-family: var(--omnes-semibold);
@@ -454,7 +473,7 @@ a {
     .circle-brand {
         width: 25%;
         height: 25%;
-        top: 75%;
+        top: 85%;
     }
 
 }
