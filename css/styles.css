@@ -42,6 +42,35 @@
 
 }
 
+a {
+    text-decoration: none;
+}
+
+
+.button-buy:hover {
+    color: white;
+}
+
+.link-phone-pj:hover {
+    color: var(--green-pj);
+}
+
+.link-phone-pp:hover {
+    color: var(--red-pp);
+}
+
+.link-phone-cw:hover {
+    color: var(--green-cw);
+}
+
+.link-phone-db:hover {
+    color: var(--black-db);
+}
+
+.link-phone-bb:hover {
+    color: var(--blue-bb);
+}
+
 /* colors */
 .blue-bb-font {
     color: var(--blue-bb);
@@ -69,7 +98,7 @@
 
 /* Header Brands */
 
-.brands-slider-mobile{
+.brands-slider-mobile {
     width: 100%;
 }
 
@@ -90,6 +119,14 @@
 
 }
 
+.banner-text,
+.banner-text:hover {
+    color: white;
+}
+
+
+
+
 @media screen and (min-width:768px) {
     .banner-schedule {
         height: 80px;
@@ -104,6 +141,8 @@
     margin-bottom: 0;
 }
 
+
+
 .time-font {
     font-size: 20px;
 }
@@ -114,8 +153,15 @@
     }
 }
 
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .time-font {
+        font-size: 25px;
+    }
+
+}
+
 .banner-schedule img {
-    width: 28px;
+    width: 40px;
 }
 
 
@@ -126,7 +172,15 @@
 
     .banner-schedule img {
         width: 60px;
+        margin-right: 0;
     }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .banner-schedule p {
+        font-size: 18px;
+    }
+
 }
 
 .title-promotions {
@@ -140,6 +194,13 @@
     .title-promotions {
         font-size: 32px;
         padding: .5em;
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .title-promotions {
+        font-size: 24px;
+
     }
 }
 
@@ -158,13 +219,21 @@
 
 }
 
-.card-shedule {
+.card-schedule {
     width: 135px;
     height: 138px;
     background-color: #fff;
     box-shadow: 0px 4px 16px #C4C4C4;
     border-radius: 8px;
     font-family: var(--omnes-medium);
+}
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .card-schedule {
+
+        width: 26%;
+    }
+
 }
 
 .container-shedule {
@@ -191,6 +260,9 @@
 .logo-schedule-cw {
     width: 50px;
 }
+
+
+
 
 .logo-schedule-db {
     width: 60px;
@@ -286,6 +358,14 @@
     }
 }
 
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .card-title-promo {
+        font-size: 18px;
+    }
+}
+
+
 .card-description-promo {
     font-family: var(--omnes-regular);
     font-size: 10px;
@@ -300,6 +380,13 @@
         font-size: 15px;
     }
 }
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .card-description-promo {
+        font-size: 14px;
+    }
+}
+
 
 .card-price-promo {
     font-family: var(--omnes-bold);
@@ -327,8 +414,16 @@
 
 
 
+
+
 .logo-circle {
     width: 40px;
+}
+
+.brand-circle-cw {
+    position: absolute;
+    top: 14px;
+
 }
 
 @media screen and (min-width:768px) {
@@ -340,6 +435,34 @@
 
     .logo-circle {
         width: 70px;
+    }
+
+    .brand-circle-cw {
+        position: absolute;
+        top: 30%;
+
+    }
+}
+
+
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .logo-circle {
+        width: 38px;
+    }
+
+    .circle-brand {
+        width: 25%;
+        height: 25%;
+        top: 75%;
+    }
+
+}
+
+@media screen and (min-width:1024px) and (max-width:1200px) {
+    .circle-brand {
+        
+        top: 75%;
     }
 }
 
@@ -366,6 +489,14 @@
     }
 }
 
+
+@media screen and (min-width:768px) and (max-width:1023px) {
+    .button-buy {
+        font-size: 20px;
+        padding: 7px 40px;
+    }
+}
+
 .button-bb {
     background-color: var(--blue-bb);
 }
@@ -388,4 +519,9 @@
 
 .button-db {
     background-color: var(--red-db);
+}
+
+.footer-text {
+    color: var(--gray-ngr-1);
+    font-family: var(--omnes-regular);
 }
