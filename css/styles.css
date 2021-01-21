@@ -4,6 +4,11 @@
 }
 
 @font-face {
+    font-family: "omnes-regular";
+    src: url("../assets/fonts/Omnes_Regular.ttf");
+}
+
+@font-face {
     font-family: "omnes-semibold";
     src: url("../assets/fonts/omnes-semibold-webfont.ttf");
 }
@@ -14,59 +19,373 @@
 }
 
 /* Variables */
-:root{
+:root {
     /* Fonts */
     --omnes-semibold: "omnes-semibold";
     --omnes-medium: "omnes-medium";
     --omnes-bold: "omnes-bold";
+    --omnes-regular: "omnes-regular";
     /* Colors */
     --orange-ngr: #FF8300;
-    --gray-ngr-1:#978B82;
-    --gray-ngr-2:#4d4d4d;
-    --blue-bb:#26358C;
+    --gray-ngr-1: #978B82;
+    --gray-ngr-2: #4d4d4d;
+    --gray-ngr-3: #4D4D4D;
+    --blue-bb: #26358C;
+    --green-pj: #00724C;
+    --red-pp: #AC162C;
+    --orange-pp: #EC6508;
+    --green-cw: #00A84F;
+    --red-cw: #E30613;
+    --pink-dd: #E60381;
+    --black-db: #000000;
+    --red-db: #E31937;
+
+}
+
+/* colors */
+.blue-bb-font {
+    color: var(--blue-bb);
+}
+
+.green-pj-font {
+    color: var(--green-pj);
+}
+
+.red-pp-font {
+    color: var(--red-pp);
+}
+
+.green-cw-font {
+    color: var(--green-cw);
+}
+
+.pink-dd-font {
+    color: var(--pink-dd);
+}
+
+.black-db-font {
+    color: var(--black-db);
 }
 
 /* Header Brands */
 
-.flex-brands-header div {
-    width: 30%;
+.brands-slider-mobile{
+    width: 100%;
 }
 
-.banner-schedule{
+.flex-brands-header div {
+    width: 100%;
+}
+
+@media screen and (min-width:768px) {
+    .flex-brands-header div {
+        width: 16%;
+    }
+}
+
+
+.banner-schedule {
     background-color: var(--orange-ngr);
     color: white;
-    
+
 }
 
-.banner-schedule p{
+@media screen and (min-width:768px) {
+    .banner-schedule {
+        height: 80px;
+
+    }
+}
+
+
+.banner-schedule p {
     font-family: var(--omnes-semibold);
     font-size: 16px;
     margin-bottom: 0;
 }
 
-.banner-schedule img{
-    width:28px ;
+.time-font {
+    font-size: 20px;
 }
 
-.title-promotions{
+@media screen and (min-width:768px) {
+    .time-font {
+        font-size: 36px;
+    }
+}
+
+.banner-schedule img {
+    width: 28px;
+}
+
+
+@media screen and (min-width:768px) {
+    .banner-schedule p {
+        font-size: 25px;
+    }
+
+    .banner-schedule img {
+        width: 60px;
+    }
+}
+
+.title-promotions {
     color: var(--gray-ngr-1);
     font-family: var(--omnes-semibold);
     font-size: 18px;
     text-align: center;
 }
 
-.title-schedule{
+@media screen and (min-width:768px) {
+    .title-promotions {
+        font-size: 32px;
+        padding: .5em;
+    }
+}
+
+.title-schedule {
     font-family: var(--omnes-medium);
     font-size: 16px;
     color: var(--gray-ngr-2);
 
 }
 
-.card-shedule{
+@media screen and (min-width:768px) {
+    .title-schedule {
+
+        font-size: 24px;
+    }
+
+}
+
+.card-shedule {
     width: 135px;
     height: 138px;
     background-color: #fff;
     box-shadow: 0px 4px 16px #C4C4C4;
     border-radius: 8px;
+    font-family: var(--omnes-medium);
+}
 
+.container-shedule {
+    height: inherit;
+}
+
+.border-schedule {
+    border-radius: 8px;
+    font-family: var(--omnes-medium);
+    text-align: center;
+    padding: 5px;
+    font-size: 16px;
+
+}
+
+.logo-schedule {
+    width: 90px;
+}
+
+.logo-schedule-pp {
+    width: 80px;
+}
+
+.logo-schedule-cw {
+    width: 50px;
+}
+
+.logo-schedule-db {
+    width: 60px;
+}
+
+.link-schedule {
+    text-decoration: none;
+}
+
+.border-bb {
+    border: 1px solid var(--blue-bb);
+    color: var(--blue-bb);
+}
+
+.border-pj {
+    border: 1px solid var(--green-pj);
+    color: var(--green-pj);
+}
+
+.border-pp {
+    border: 1px solid var(--red-pp);
+    color: var(--red-pp);
+}
+
+.border-cw {
+    border: 1px solid var(--green-cw);
+    color: var(--green-cw);
+}
+
+.border-dd {
+    border: 1px solid var(--pink-dd);
+    color: var(--pink-dd);
+}
+
+.border-db {
+    border: 1px solid var(--black-db);
+    color: var(--black-db);
+}
+
+/* Card Promotion */
+
+.card-promotion {
+    background-color: white;
+    box-shadow: 0px 4px 25px rgba(95, 95, 95, 0.25);
+    border-radius: 16px;
+    width: 45%;
+    margin-bottom: 1em;
+    padding-bottom: 1.25em;
+
+}
+
+@media screen and (min-width:768px) {
+    .card-promotion {
+        width: 30%;
+    }
+}
+
+
+.grid-description {
+    display: grid;
+    grid-template-rows: 2fr 1fr;
+}
+
+
+
+.grid-text {
+    display: grid;
+    grid-template-rows: 55px 32px 25px;
+    align-items: center;
+}
+
+@media screen and (min-width:768px) {
+    .grid-text {
+
+        grid-template-rows: 55px 50px 35px;
+
+    }
+}
+
+
+.card-title-promo {
+    font-family: var(--omnes-semibold);
+    font-size: 14px;
+    color: var(--gray-ngr-3);
+    margin-bottom: 0;
+    line-height: 1.25;
+    margin-top: 20px;
+}
+
+@media screen and (min-width:768px) {
+    .card-title-promo {
+        font-size: 22px;
+    }
+}
+
+.card-description-promo {
+    font-family: var(--omnes-regular);
+    font-size: 10px;
+    color: var(--gray-ngr-3);
+    margin-bottom: 0;
+    line-height: 1.25;
+
+}
+
+@media screen and (min-width:768px) {
+    .card-description-promo {
+        font-size: 15px;
+    }
+}
+
+.card-price-promo {
+    font-family: var(--omnes-bold);
+    font-size: 15px;
+    color: var(--gray-ngr-3);
+    margin-bottom: 0;
+}
+
+@media screen and (min-width:768px) {
+    .card-price-promo {
+        font-size: 22px;
+    }
+}
+
+
+.circle-brand {
+    border-radius: 50%;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    width: 52px;
+    height: 52px;
+    top: 80%;
+    right: 10px;
+}
+
+
+
+.logo-circle {
+    width: 40px;
+}
+
+@media screen and (min-width:768px) {
+    .circle-brand {
+        width: 92px;
+        height: 92px;
+
+    }
+
+    .logo-circle {
+        width: 70px;
+    }
+}
+
+
+.img-promo {
+    width: 100%;
+    border-radius: 16px;
+}
+
+.button-buy {
+    color: white;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 8px;
+    text-decoration: none;
+    font-family: var(--omnes-semibold);
+    font-size: 14px;
+    padding: 7px 38px;
+}
+
+@media screen and (min-width:768px) {
+    .button-buy {
+        font-size: 20px;
+        padding: 7px 60px;
+    }
+}
+
+.button-bb {
+    background-color: var(--blue-bb);
+}
+
+.button-pj {
+    background-color: var(--green-pj);
+}
+
+.button-pp {
+    background-color: var(--orange-pp);
+}
+
+.button-cw {
+    background-color: var(--red-cw);
+}
+
+.button-dd {
+    background-color: var(--pink-dd);
+}
+
+.button-db {
+    background-color: var(--red-db);
 }

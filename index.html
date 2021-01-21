@@ -4,70 +4,312 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Promociones Especiales</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <title>Promociones NGR</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
-
-
+    <link rel="stylesheet" href="assets/slick-1.8.1/slick/slick.css">
+<link rel="stylesheet" href="assets/slick-1.8.1/slick/slick-theme.css">
 </head>
 
 <body class="">
     <!-- Brands -->
-    <header class="flex-brands-header d-flex flex-wrap justify-content-between container">
-        <div><a href=""><img class="img-fluid" src="assets/images/bb.png" alt="logo-bembos"></a></div>
-        <div><a href=""><img class="img-fluid" src="assets/images/pj.png" alt="logo-papajohns"></a></div>
-        <div><a href=""><img class="img-fluid" src="assets/images/pp.png" alt="logo-popeyes"></a></div>
-        <div><a href=""><img class="img-fluid" src="assets/images/cw.png" alt="logo-chinawok"></a></div>
-        <div><a href=""><img class="img-fluid" src="assets/images/dd.png" alt="logo-dunkin"></a></div>
-        <div><a href=""><img class="img-fluid" src="assets/images/db.png" alt="logo-donbelisario"></a></div>
+    <header class="flex-brands-header d-flex flex-wrap justify-content-between container brands-slider-mobile brand-js">
+        <div><a href="https://www.bembos.com.pe/menu/promociones-bembos-delivery" target="_blank"><img class="img-fluid"
+                    src="assets/images/bb.png" alt="logo-bembos"></a></div>
+        <div><a href="https://papajohns.com.pe/promociones" target="_blank"><img class="img-fluid"
+                    src="assets/images/pj.png" alt="logo-papajohns"></a></div>
+        <div><a href="http://www.popeyes.com.pe/promociones" target="_blank"><img class="img-fluid"
+                    src="assets/images/pp.png" alt="logo-popeyes"></a></div>
+        <div><a href="http://www.chinawok.com.pe/promociones.html/" target="_blank"><img class="img-fluid"
+                    src="assets/images/cw.png" alt="logo-chinawok"></a></div>
+        <div><a href="https://dunkin.pe/promociones" target="_blank"><img class="img-fluid" src="assets/images/dd.png"
+                    alt="logo-dunkin"></a></div>
+        <div><a href="https://www.donbelisario.com.pe/promociones" target="_blank"><img class="img-fluid"
+                    src="assets/images/db.png" alt="logo-donbelisario"></a></div>
     </header>
     <main>
         <!-- Schedule general -->
         <div class="banner-schedule pt-2 pb-2">
-            <div class="d-flex container justify-content-center">
-                <img class="icon-delivery me-1" src="assets/images/delivery.svg" alt="icon-delivery">
-                <p>Atención hasta las 11pm por Delivery *</p>
+            <div class="d-flex container align-items-center justify-content-center">
+                <img class="icon-delivery me-3" src="assets/images/delivery.svg" alt="icon-delivery">
+                <p>Lima: Atención por Delivery hasta las <span class="time-font">11pm</span> y locales hasta las <span
+                        class="time-font">9pm</span>*</p>
             </div>
-             
+
         </div>
         <!-- Title  -->
         <div class="title-promotions container">
             <p class="mt-2">Disfruta desde casa con nuestras mejores marcas : </p>
         </div>
         <!-- Promotions -->
-        <section class="flex-promotions">
-            <div class="card-promotion"></div>
-            <div class="card-promotion"></div>
-            <div class="card-promotion"></div>
-            <div class="card-promotion"></div>
-            <div class="card-promotion"></div>
-            <div class="card-promotion"></div>
+        <section class="flex-promotions d-flex flex-wrap justify-content-around container">
+            <div class="card-promotion">
+                <div class="position-relative">
+                    <img class="img-promo" src="assets/images/promo-bb.jpg" alt="queso-tocino">
+                    <div class="circle-brand d-flex justify-content-center align-items-center position-absolute">
+                        <img class="logo-circle" src="assets/images/logo-bb.svg" alt="">
+                    </div>
+                </div>
 
+                <div class="p-2 text-center grid-text">
+                    <p class="card-title-promo">Combo Dúo Queso Tocino</p>
+                    <p class="card-description-promo">
+                        2 Queso Tocino regulares + 2 papas medianas
+                    </p>
+                    <p class="card-price-promo">S/ 21.90</p>
+                </div>
+                <div class="text-center container-btn">
+                    <a href="https://www.bembos.com.pe/combo-duo-queso-tocino" class="button-buy button-bb">Comprar</a>
+                </div>
+
+
+            </div>
+            <!-- Promoción Papa John's -->
+            <div class="card-promotion">
+                <div class="position-relative">
+                    <img class="img-promo" src="assets/images/promo-bb.jpg" alt="queso-tocino">
+                    <div class="circle-brand d-flex justify-content-center align-items-center position-absolute">
+                        <img class="logo-circle" src="assets/images/logo-pj.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="p-2 text-center grid-text">
+                        <p class="card-title-promo">Tu Combinación Perfecta</p>
+                        <p class="card-description-promo">
+                            1 pizza grande + gaseosa 1.5 LT
+                        </p>
+                        <p class="card-price-promo">S/ 29.90</p>
+                    </div>
+                </div>
+                <div class="text-center container-btn">
+                    <a href="https://papajohns.com.pe/menu/promociones/combinacion-perfecta.html"
+                        class="button-buy button-pj">Comprar</a>
+                </div>
+            </div>
+            <!-- Promoción Popeyes -->
+            <div class="card-promotion">
+                <div class="position-relative">
+                    <img class="img-promo" src="assets/images/promo-bb.jpg" alt="queso-tocino">
+                    <div class="circle-brand d-flex justify-content-center align-items-center position-absolute">
+                        <img class="logo-circle" src="assets/images/logo-pp.svg" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="p-2 text-center grid-text">
+                        <p class="card-title-promo">Tu Combinación Perfecta</p>
+                        <p class="card-description-promo">
+                            8 piezas + 6 alitas + 1 chicharron pop + 1 papa cajun familiar
+                        </p>
+                        <p class="card-price-promo">S/ 39.90</p>
+                    </div>
+                </div>
+                <div class="text-center container-btn">
+                    <a href="https://papajohns.com.pe/menu/promociones/combinacion-perfecta.html"
+                        class="button-buy button-pp">Comprar</a>
+                </div>
+            </div>
+            <!-- Promoción Dunkin -->
+            <div class="card-promotion">
+                <div class="position-relative">
+                    <img class="img-promo" src="assets/images/promo-bb.jpg" alt="queso-tocino">
+                    <div class="circle-brand d-flex justify-content-center align-items-center position-absolute">
+                        <img class="logo-circle" src="assets/images/logo-dd.svg" alt="logo-dd">
+                    </div>
+                </div>
+                <div>
+                    <div class="p-2 text-center grid-text">
+                        <p class="card-title-promo">Tu Combinación Perfecta</p>
+                        <p class="card-description-promo">
+                            1 pizza grande + gaseosa 1.5 LT
+                        </p>
+                        <p class="card-price-promo">S/ 29.90</p>
+                    </div>
+                </div>
+                <div class="text-center container-btn">
+                    <a href="https://papajohns.com.pe/menu/promociones/combinacion-perfecta.html"
+                        class="button-buy button-dd">Comprar</a>
+                </div>
+            </div>
+            <!-- Promoción Chinawok -->
+            <div class="card-promotion">
+                <div class="position-relative">
+                    <img class="img-promo" src="assets/images/promo-bb.jpg" alt="queso-tocino">
+                    <div class="circle-brand d-flex justify-content-center align-items-center position-absolute">
+                        <img class="logo-circle" src="assets/images/logo-cw.svg" alt="logo-cw">
+                    </div>
+                </div>
+                <div>
+                    <div class="p-2 text-center grid-text">
+                        <p class="card-title-promo">Tu Combinación </p>
+                        <p class="card-description-promo">
+                            1 encájate arroz chaufa ,1 tallarin taypá personal,6 wantanes
+                        </p>
+                        <p class="card-price-promo">S/ 29.90</p>
+                    </div>
+                </div>
+                <div class="text-center container-btn">
+                    <a href="https://papajohns.com.pe/menu/promociones/combinacion-perfecta.html"
+                        class="button-buy button-cw">Comprar</a>
+                </div>
+            </div>
+            <!-- Promoción Don Belisario -->
+            <div class="card-promotion">
+                <div class="position-relative">
+                    <img class="img-promo" src="assets/images/promo-bb.jpg" alt="queso-tocino">
+                    <div class="circle-brand d-flex justify-content-center align-items-center position-absolute">
+                        <img class="logo-circle" src="assets/images/logo-db.svg" alt="logo-db">
+                    </div>
+                </div>
+                <div>
+                    <div class="p-2 text-center grid-text">
+                        <p class="card-title-promo">Don belimostro + Salchipollo a la brasa</p>
+                        <p class="card-description-promo">
+                            1 pizza grande + gaseosa 1.5 LT
+                        </p>
+                        <p class="card-price-promo">S/ 24.90</p>
+                    </div>
+                </div>
+                <div class="text-center container-btn">
+                    <a href="https://papajohns.com.pe/menu/promociones/combinacion-perfecta.html"
+                        class="button-buy button-db">Comprar</a>
+                </div>
+            </div>
         </section>
         <!-- Schedule and Phones -->
         <section class="container">
             <p class="title-schedule">*Horarios que aplican por tiendas </p>
-            <div class="d-flex flex-wrap justify-content-between ">
-                <div class="card-shedule mb-1">
-                    <img src="" alt="">
-                    <div>
-                        Ver horarios
-                    </div>
-                    <div>
-                        <img src="assets/images/phone-blue.svg" alt="phone-bb">
-                        <p>419-1919</p>
+            <div class="d-flex flex-wrap justify-content-around ">
+                <div class="card-shedule mb-4 p-1 ">
+                    <div class="d-flex justify-content-center container-shedule align-items-center">
+                        <div>
+                            <div class="text-center mb-2">
+                                <img class="logo-schedule" src="assets/images/logo-bb.svg" alt="">
+                            </div>
+                            <a class="link-schedule" target="_blank" href="https://www.bembos.com.pe/locales">
+                                <div class="border-schedule border-bb mb-2">
+                                    Ver horarios
+                                </div>
+                            </a>
+
+                            <div class="d-flex justify-content-center blue-bb-font">
+                                <img class="me-1" src="assets/images/phone-blue.svg" alt="phone-bb">
+                                <p class="mb-0">419-1919</p>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
-                <div class="card-shedule"></div>
-                <div class="card-shedule"></div>
-                <div class="card-shedule"></div>
-                <div class="card-shedule"></div>
-                <div class="card-shedule"></div>
+
+                <div class="card-shedule mb-4 p-1 ">
+                    <div class="d-flex justify-content-center container-shedule align-items-center">
+                        <div>
+                            <div class="text-center mb-2">
+                                <img class="logo-schedule" src="assets/images/logo-pj.svg" alt="">
+                            </div>
+                            <a class="link-schedule" target="_blank" href="https://papajohns.com.pe/locales">
+                                <div class="border-schedule border-pj mb-2">
+                                    Ver horarios
+                                </div>
+                            </a>
+
+                            <div class="d-flex justify-content-center green-pj-font">
+                                <img class="me-1" src="assets/images/phone-green-pj.svg" alt="phone-pj">
+                                <p class="mb-0">606-0000</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-shedule mb-4 p-1 ">
+                    <div class="d-flex justify-content-center container-shedule align-items-center">
+                        <div>
+                            <div class="text-center mb-2">
+                                <img class="logo-schedule-pp" src="assets/images/logo-pp.svg" alt="">
+                            </div>
+                            <a class="link-schedule" target="_blank" href="http://www.popeyes.com.pe/locales/">
+                                <div class="border-schedule border-pp mb-2">
+                                    Ver horarios
+                                </div>
+                            </a>
+
+                            <div class="d-flex justify-content-center red-pp-font">
+                                <img class="me-1" src="assets/images/phone-pp.svg" alt="phone-pp">
+                                <p class="mb-0">631-6000</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-shedule mb-4 p-1 ">
+                    <div class="d-flex justify-content-center container-shedule align-items-center">
+                        <div>
+                            <div class="text-center mb-2">
+                                <img class="logo-schedule-cw" src="assets/images/logo-cw.svg" alt="">
+                            </div>
+                            <a class="link-schedule" target="_blank" href="http://www.chinawok.com.pe/locales/">
+                                <div class="border-schedule border-cw mb-2">
+                                    Ver horarios
+                                </div>
+                            </a>
+
+                            <div class="d-flex justify-content-center green-cw-font">
+                                <img class="me-1" src="assets/images/phone-cw.svg" alt="phone-bb">
+                                <p class="mb-0">612-8000</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="card-shedule mb-4 p-1 ">
+                    <div class="d-flex justify-content-center container-shedule align-items-center">
+                        <div>
+                            <div class="text-center mb-2">
+                                <img class="logo-schedule" src="assets/images/logo-dd.svg" alt="">
+                            </div>
+                            <a class="link-schedule" target="_blank" href="https://dunkin.pe/locales">
+                                <div class="border-schedule border-dd mb-2">
+                                    Ver horarios y teléfonos
+                                </div>
+                            </a>
+
+
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="card-shedule mb-1 p-1 ">
+                    <div class="d-flex justify-content-center container-shedule align-items-center">
+                        <div>
+                            <div class="text-center mb-2">
+                                <img class="logo-schedule-db" src="assets/images/logo-db.svg" alt="">
+                            </div>
+                            <a class="link-schedule" target="_blank" href="https://www.donbelisario.com.pe/locales/">
+                                <div class="border-schedule border-db mb-2">
+                                    Ver horarios
+                                </div>
+                            </a>
+
+                            <div class="d-flex justify-content-center black-db-font">
+                                <img class="me-1" src="assets/images/phone-db.svg" alt="phone-bb">
+                                <p class="mb-0">611-3333</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-
+    <script
+  src="https://code.jquery.com/jquery-3.5.1.min.js"
+  integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0="
+  crossorigin="anonymous"></script>
+    
+    <script type="text/javascript" src="assets/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
