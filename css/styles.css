@@ -116,6 +116,9 @@ a {
 .banner-schedule {
     background-color: var(--orange-ngr);
     color: white;
+    display: flex;
+    align-items: center;
+    height: 60px;
 
 }
 
@@ -129,27 +132,31 @@ a {
 
 @media screen and (min-width:768px) {
     .banner-schedule {
-        height: 80px;
+        height: 100px;
 
     }
 }
 
+.w100{
+    width: 100%;
+}
 
 .banner-schedule p {
     font-family: var(--omnes-semibold);
-    font-size: 16px;
+    font-size: 14px;
     margin-bottom: 0;
+    line-height: 1;
 }
 
 
 
 .time-font {
-    font-size: 20px;
+    font-size: 16px;
 }
 
 @media screen and (min-width:768px) {
     .time-font {
-        font-size: 36px;
+        font-size: 30px;
     }
 }
 
@@ -165,9 +172,27 @@ a {
 }
 
 
+.grid-text-banner{
+display: grid;
+grid-template-columns: 70px 1fr;
+align-items: center;
+}
+
+.line{
+    border-right: 1px solid #fff;
+}
+
 @media screen and (min-width:768px) {
+
+    .grid-text-banner{
+        display: grid;
+        grid-template-columns: 130px 1fr;
+        align-items: center;
+        }
     .banner-schedule p {
         font-size: 25px;
+        line-height: 1;
+        
     }
 
     .banner-schedule img {
@@ -178,7 +203,7 @@ a {
 
 @media screen and (min-width:768px) and (max-width:1023px) {
     .banner-schedule p {
-        font-size: 18px;
+        font-size: 24px;
     }
 
 }
